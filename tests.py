@@ -153,6 +153,7 @@ class WebTestCase(unittest.TestCase):
         error_comment = "Error encountered while visiting " + web_path
 
         response = self.get_response(web_path)
+        
 
         self.assertEqual(response.getcode(), 404, error_comment)
 
